@@ -25,12 +25,12 @@ def stats(update, context):
     free = get_readable_file_size(free)
     cpuUsage = psutil.cpu_percent(interval=0.5)
     memory = psutil.virtual_memory().percent
-    stats = f'Bot Uptime: {currentTime}\n' \
-            f'Total disk space: {total}\n' \
-            f'Used: {used}\n' \
-            f'Free: {free}\n' \
-            f'CPU: {cpuUsage}%\n' \
-            f'RAM: {memory}%'
+    stats = f'🤖 Bot Uptime: {currentTime}\n' \
+            f'🗄️ Total disk space: {total}\n' \
+            f'📂 Used: {used}\n' \
+            f'🤪 Free: {free}\n' \
+            f'🖥️ CPU: {cpuUsage}%\n' \
+            f'💿 RAM: {memory}%'
     sendMessage(stats, context.bot, update)
 
 
@@ -92,6 +92,10 @@ def bot_help(update, context):
 /{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
 
 /{BotCommands.LogCommand}: Get a log file of the bot. Handy for getting crash reports
+
+/{BotCommands.UnAuthorizeCommand}: Revoke Authorized Chat Or User
+
+/{BotCommands.PingCommand}: Test Ping 
 
 '''
     sendMessage(help_string, context.bot, update)
