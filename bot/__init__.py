@@ -57,13 +57,9 @@ status_reply_dict = {}
 # Value: An object of Status
 download_dict = {}
 # Stores list of users and chats the bot is authorized to use in
-AUTHORIZED_CHATS = set()
-if os.path.exists('authorized_chats.txt'):
-    with open('authorized_chats.txt', 'r+') as f:
-        lines = f.readlines()
-        for line in lines:
-            #    LOGGER.info(line.split())
-            AUTHORIZED_CHATS.add(int(line.split()[0]))
+AUTHORIZED_CHATS = set(
+    int(x) for x in getConfig("AUTHORIZED_CHATS").split()
+)
 try:
     BOT_TOKEN = getConfig('BOT_TOKEN')
     parent_id = getConfig('GDRIVE_FOLDER_ID')
