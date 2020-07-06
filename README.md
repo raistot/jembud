@@ -22,6 +22,10 @@ This project is heavily inspired from @out386 's telegram bot which is written i
 # Upcoming features (TODOs):
 
 # How to deploy?
+
+Deploy to Heroku
+<p align="left"><a href="https://heroku.com/deploy"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
+
 Deploying is pretty much straight forward and is divided into several steps as follows:
 ## Installing requirements
 
@@ -96,11 +100,6 @@ sudo docker build . -t mirror-bot
 ```
 sudo docker run mirror-bot
 ```
-
-## How To Host?
-
-Deploy to Heroku
-<p align="left"><a href="https://heroku.com/deploy"> <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy to Heroku" /></a></p>
 
 # Using service accounts for uploading to avoid user rate limit
 For Service Account to work, you must set USE_SERVICE_ACCOUNTS="True" in config file or environment variables
