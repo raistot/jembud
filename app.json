@@ -1,0 +1,73 @@
+{
+    "name": "aria-TgBot",
+    "description": "Telegram mirror bot with python",
+    "logo": "https://telegra.ph/file/b19df71fc02abe4423f27.jpg",
+    "keywords": [
+      "telegram",
+      "bot",
+      "aria",
+      "python"
+    ],
+    "repository": "https://github.com/MoveAngel/aria-TgBot",
+    "website": "https://minaproject.tech",
+    "success_url": "https://t.me/userbotindo",
+    "stack": "container",
+    "env": {
+      "AUTHORIZED_CHATS": {
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "required": true
+      },
+      "GDRIVE_FOLDER_ID": {
+        "required": true
+      },
+      "DOWNLOAD_DIR": {
+        "value": "/home/sonnaeun/mirror-bot/downloads",
+        "required": true
+      },
+      "DOWNLOAD_STATUS_UPDATE_INTERVAL": {
+        "value": "10",
+        "required":false
+      },
+      "OWNER_ID": {
+        "required": true
+      },
+      "AUTO_DELETE_MESSAGE_DURATION": {
+        "value": "20",
+        "required": true
+      },
+      "IS_TEAM_DRIVE": {
+        "required": false
+      },
+      "USE_SERVICE_ACCOUNTS": {
+        "required": false
+      },
+      "INDEX_URL": {
+        "required": false
+      },
+      "TELEGRAM_API": {
+        "required": true
+      },
+      "TELEGRAM_HASH": {
+        "required": true
+      },
+      "MEGA_API_KEY": {
+        "required": true
+      },
+      "MEGA_EMAIL_ID": {
+        "required": true
+      },
+      "MEGA_PASSWORD": {
+        "required": true
+      }
+    },
+"addons": [
+  {
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }
+]
+}
