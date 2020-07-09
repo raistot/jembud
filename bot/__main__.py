@@ -71,23 +71,23 @@ def bot_help(update, context):
     help_string = f'''
 /{BotCommands.HelpCommand}: To get this message
 
-/{BotCommands.MirrorCommand} [download_url][magnet_link]: Start mirroring the link to google drive
+/{BotCommands.MirrorCommand} [download_url][magnet_link]: Start Download and upload Directly to google drive
 
-/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link] : starts mirroring and if downloaded file is any archive , extracts it to google drive
+/{BotCommands.UnzipMirrorCommand} [download_url][magnet_link] : starts Download and if downloaded file is any archive , extracts it to google drive
 
-/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: start mirroring and upload the archived (.tar) version of the download
+/{BotCommands.TarMirrorCommand} [download_url][magnet_link]: start Download and upload the archived (.tar) version of the download
 
-/{BotCommands.WatchCommand} [youtube-dl supported link]: Mirror through youtube-dl 
+/{BotCommands.WatchCommand} [youtube-dl supported link]: Download Vide through youtube-dl 
 
-/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Mirror through youtube-dl and tar before uploading
+/{BotCommands.TarWatchCommand} [youtube-dl supported link]: Download Video through youtube-dl and tar before uploading
 
-/{BotCommands.CancelMirror} : Reply to the message by which the download was initiated and that download will be cancelled
+/{BotCommands.CancelMirror} :  Abort Download  Using GID
 
 /{BotCommands.StatusCommand}: Shows a status of all the downloads
 
 /{BotCommands.ListCommand} [search term]: Searches the search term in the Google drive, if found replies with the link
 
-/{BotCommands.StatsCommand}: Show Stats of the machine the bot is hosted on
+/{BotCommands.StatsCommand}: Show Info of the machine the bot is hosted on
 
 /{BotCommands.AuthorizeCommand}: Authorize a chat or a user to use the bot (Can only be invoked by owner of the bot)
 
@@ -95,7 +95,7 @@ def bot_help(update, context):
 
 /{BotCommands.UnAuthorizeCommand}: Revoke Authorized Chat Or User
 
-/{BotCommands.PingCommand}: Test Ping 
+/{BotCommands.PingCommand}: Start Ping 
 
 '''
     sendMessage(help_string, context.bot, update)
